@@ -174,46 +174,47 @@ Days in Arrears > 10
 Customers were then segmented based on whether they met zero, one, or both conditions.
 
 Risk Level	Definition	Customers	Percentage
+
 Low Risk	Neither indicator	7,762	77.62%
+
 Moderate Risk	Exactly one indicator	1,971	19.71%
+
 High Risk	Both indicators	267	2.67%
 
 These risk categories are analytical segments created for this project. They should not be interpreted as actual loan-default predictions.
 
-📊 Key Findings
+### 📊 Key Findings
+
 1. Regional Customer Distribution
 
 The Central region has the largest customer population with:
-
 2,683 customers
 26.83% of the total customer base
+
 2. Education & Loan Requests
-
-Customers with a Postgraduate education level have the highest average requested loan amount:
-
-11,950.24
-
+   
+Customers with a Postgraduate education level have the highest average requested loan amount:  11,950.24
 They also have the highest average monthly income among the education groups.
 
-3. Credit Risk Indicators
+4. Credit Risk Indicators
+   
 1,356 customers have a credit score below 500.
 1,149 customers have more than 10 days in arrears.
 267 customers meet both conditions.
+
 4. Total Loan Demand
 
 The total requested loan amount across the customer base is approximately:
-
 62.74M
-
 with an average requested loan amount of:
-
 6,273.89
 
 5. Education vs. Region
 
 The analysis shows larger differences across education groups for financial metrics such as income and requested loan amount, while regional averages are comparatively closer to one another.
 
-📊 Excel Dashboard
+
+### 📊 Excel Dashboard
 
 The final dashboard brings together the major findings into an interactive report.
 
@@ -235,7 +236,7 @@ Risk Level
 
 These filters allow users to explore the dashboard dynamically.
 
-🛠️ Tools & Skills Used
+### 🛠️ Tools & Skills Used
 Microsoft Excel
 Data Cleaning
 Data Validation

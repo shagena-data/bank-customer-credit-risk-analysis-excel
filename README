@@ -1,1 +1,325 @@
+# 🏦 Bank Customer Financial & Credit Risk Analysis — Excel
 
+An end-to-end **Bank Customer Financial & Credit Risk Analysis** project built using Microsoft Excel.
+
+This project analyzes customer demographics, financial characteristics, loan requests, and credit-risk indicators to generate business insights through **data cleaning, statistical analysis, PivotTables, risk segmentation, and an interactive Excel dashboard**.
+
+---
+
+## 📊 Dashboard Preview
+
+![Bank Customer Financial & Credit Risk Dashboard](Images/dashboard.png)
+
+> An interactive Excel dashboard providing an overview of customer demographics, financial metrics, regional performance, and credit-risk indicators.
+
+---
+
+## 🎯 Project Objective
+
+The objective of this project is to analyze banking customer data and identify meaningful patterns in:
+
+- Customer demographics
+- Education levels
+- Regional distribution
+- Monthly income
+- Account balances
+- Credit scores
+- Days in arrears
+- Requested loan amounts
+- Customer credit-risk indicators
+
+The analysis was designed to demonstrate how Excel can be used to transform raw banking data into a structured analytical report and interactive dashboard.
+
+---
+
+## 📁 Dataset
+
+**Dataset:** Banking Loan Applications Dataset
+
+**Source:** Kaggle
+
+**Rows:** 10,000 customers  
+**Columns:** 10 original variables
+
+The dataset contains simulated banking customer and loan application information.
+
+### Original Variables
+
+| Column | Description |
+|---|---|
+| `id` | Unique customer identifier |
+| `edad` | Customer age |
+| `genero` | Customer gender |
+| `nivel_educativo` | Education level |
+| `region` | Geographical region |
+| `ingreso_mensual` | Monthly income |
+| `saldo_cuenta` | Account balance |
+| `score_crediticio` | Credit score |
+| `dias_mora_12m` | Days in arrears during the previous 12 months |
+| `monto_prestamo_solicitado` | Requested loan amount |
+
+The original dataset was preserved separately as the raw dataset.
+
+---
+
+## 🧹 Data Cleaning & Preparation
+
+The raw dataset was audited and cleaned before analysis.
+
+### Data Quality Checks
+
+- Checked dataset dimensions
+- Checked missing values
+- Checked duplicate records
+- Checked duplicate customer IDs
+- Validated numeric ranges
+- Reviewed categorical values
+- Identified potential outliers
+
+### Missing Value Treatment
+
+Missing numeric values were replaced using the **median** to reduce the influence of extreme values.
+
+| Variable | Missing Values | Treatment |
+|---|---:|---|
+| Region | 303 | Replaced with `Unknown` |
+| Monthly Income | 1,088 | Median imputation |
+| Account Balance | 565 | Median imputation |
+| Credit Score | 1,167 | Median imputation |
+| Days in Arrears | 349 | Median imputation |
+| Requested Loan Amount | 719 | Median imputation |
+
+No duplicate customer IDs or duplicate rows were identified.
+
+---
+
+## 📈 Descriptive Analysis
+
+Descriptive statistics were calculated for the major numerical variables.
+
+### Key Metrics
+
+| Metric | Value |
+|---|---:|
+| Total Customers | 10,000 |
+| Average Age | 46.68 |
+| Average Monthly Income | 2,028.17 |
+| Average Account Balance | 3,632.44 |
+| Average Credit Score | 577.36 |
+| Average Days in Arrears | 7.24 |
+| Average Requested Loan Amount | 6,273.89 |
+| Total Requested Loan Amount | 62.74M |
+
+---
+
+## ⚠️ Outlier Analysis
+
+The **Interquartile Range (IQR)** method was used to identify potential outliers.
+
+| Variable | Potential Outliers |
+|---|---:|
+| Age | 0 |
+| Monthly Income | 400 |
+| Account Balance | 360 |
+| Credit Score | 36 |
+| Days in Arrears | 44 |
+| Requested Loan Amount | 430 |
+
+Potential outliers were not automatically removed because extreme financial values can represent legitimate customer behavior rather than data errors.
+
+---
+
+## 🏦 Business Analysis
+
+The project analyzes customer characteristics across several dimensions.
+
+### Customer Demographics
+
+- Gender distribution
+- Education-level distribution
+- Regional customer distribution
+
+### Financial Profile
+
+- Average monthly income
+- Average account balance
+- Average requested loan amount
+- Total requested loan amount
+
+### Credit Profile
+
+- Average credit score
+- Average days in arrears
+- Customers with low credit scores
+- Customers with higher days in arrears
+- Combined risk indicators
+
+---
+
+## 🔎 Risk Analysis
+
+A customer-level risk segmentation was created using two analytical indicators:
+
+### Risk Indicators
+
+**Low Credit Score**
+
+```text
+Credit Score < 500
+
+High Days in Arrears
+
+Days in Arrears > 10
+
+Customers were then segmented based on whether they met zero, one, or both conditions.
+
+Risk Level	Definition	Customers	Percentage
+Low Risk	Neither indicator	7,762	77.62%
+Moderate Risk	Exactly one indicator	1,971	19.71%
+High Risk	Both indicators	267	2.67%
+
+These risk categories are analytical segments created for this project. They should not be interpreted as actual loan-default predictions.
+
+📊 Key Findings
+1. Regional Customer Distribution
+
+The Central region has the largest customer population with:
+
+2,683 customers
+26.83% of the total customer base
+2. Education & Loan Requests
+
+Customers with a Postgraduate education level have the highest average requested loan amount:
+
+11,950.24
+
+They also have the highest average monthly income among the education groups.
+
+3. Credit Risk Indicators
+1,356 customers have a credit score below 500.
+1,149 customers have more than 10 days in arrears.
+267 customers meet both conditions.
+4. Total Loan Demand
+
+The total requested loan amount across the customer base is approximately:
+
+62.74M
+
+with an average requested loan amount of:
+
+6,273.89
+
+5. Education vs. Region
+
+The analysis shows larger differences across education groups for financial metrics such as income and requested loan amount, while regional averages are comparatively closer to one another.
+
+📊 Excel Dashboard
+
+The final dashboard brings together the major findings into an interactive report.
+
+Dashboard Sections
+Customer Profile
+Education Profile
+Credit Risk Overview
+Financial Profile
+Regional Financial Comparison
+Key Business Insights
+Interactive Filters
+
+The dashboard includes filters for:
+
+Gender
+Education Level
+Region
+Risk Level
+
+These filters allow users to explore the dashboard dynamically.
+
+🛠️ Tools & Skills Used
+Microsoft Excel
+Data Cleaning
+Data Validation
+Excel Tables
+Formulas
+COUNTIF
+COUNTIFS
+AVERAGE
+SUM
+MEDIAN
+PivotTables
+PivotCharts
+Slicers
+Descriptive Statistics
+IQR Outlier Analysis
+Risk Segmentation
+Dashboard Design
+Analytical Skills
+Data Quality Analysis
+Exploratory Data Analysis
+Descriptive Statistics
+Business Analysis
+Risk Indicator Design
+Data Visualization
+Dashboard Development
+
+
+📂 Project Structure
+bank-customer-credit-risk-analysis-excel/
+│
+├── README.md
+│
+├── Dataset/
+│   └── Raw_Data.xlsx
+│
+├── Excel/
+│   └── Bank_Customer_Credit_Risk_Analysis.xlsx
+│
+└── Images/
+    └── dashboard.png
+
+
+📌 Project Workflow
+Raw Dataset
+     ↓
+Data Quality Audit
+     ↓
+Data Cleaning & Validation
+     ↓
+Descriptive Statistics
+     ↓
+Outlier Analysis
+     ↓
+Business Analysis
+     ↓
+Risk Segmentation
+     ↓
+PivotTables & PivotCharts
+     ↓
+Interactive Dashboard
+     ↓
+Business Insights
+
+
+💡 Business Value
+
+This project demonstrates how raw customer and financial data can be transformed into a structured analytical solution that helps stakeholders:
+
+Understand the customer base
+Compare financial characteristics across customer groups
+Identify customers showing specific credit-risk indicators
+Analyze regional and educational patterns
+Monitor loan demand
+Explore data interactively through dashboard filters
+
+
+👩‍💻 Author
+
+Shagena Beebe M
+
+Skills
+
+Python SQL Excel Power BI Pandas NumPy Statistics Machine Learning
+
+Connect With Me
+LinkedIn: Shagena on LinkedIn
+GitHub: shagena-data

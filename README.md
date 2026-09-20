@@ -164,7 +164,7 @@ A customer-level risk segmentation was created using two analytical indicators:
 
 **Low Credit Score**
 
-```text
+``text
 Credit Score < 500
 
 High Days in Arrears
@@ -263,7 +263,7 @@ Data Visualization
 Dashboard Development
 
 
-📂 Project Structure
+### 📂 Project Structure
 bank-customer-credit-risk-analysis-excel/
 │
 ├── README.md
@@ -278,7 +278,7 @@ bank-customer-credit-risk-analysis-excel/
     └── dashboard.png
 
 
-📌 Project Workflow
+### 📌 Project Workflow
 Raw Dataset
      ↓
 Data Quality Audit
@@ -300,7 +300,7 @@ Interactive Dashboard
 Business Insights
 
 
-💡 Business Value
+### 💡 Business Value
 
 This project demonstrates how raw customer and financial data can be transformed into a structured analytical solution that helps stakeholders:
 

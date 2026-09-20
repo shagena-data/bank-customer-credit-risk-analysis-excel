@@ -1,4 +1,4 @@
- 🏦 Bank Customer Financial & Credit Risk Analysis — Excel
+ # 🏦 Bank Customer Financial & Credit Risk Analysis — Excel
 
 An end-to-end **Bank Customer Financial & Credit Risk Analysis** project built using Microsoft Excel.
 
